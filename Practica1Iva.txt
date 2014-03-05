@@ -1,0 +1,41 @@
+using System;
+
+namespace practicaiva
+{ 
+class MainClass 
+{ 
+public int precio1,precio2,precio3; static void Main() 
+{ 
+string Producto1; 
+string Producto2; 
+string Producto3; 
+double a; 
+double b; 
+double c; 
+double suma;
+
+Console.WriteLine("Precio del primer producto: "); 
+Producto1=Console.ReadLine(); 
+Console.WriteLine("Precio del segundo producto: "); 
+Producto2=Console.ReadLine(); 
+Console.WriteLine("Precio del tercer producto: "); 
+Producto3=Console.ReadLine();
+
+double apro1 = double.Parse(Producto1); 
+double bpro2 = double.Parse(Producto2); 
+double cpro3 = double.Parse(Producto3);
+
+a = apro1 * 1.16; 
+b = bpro2 * 1.16; 
+c = cpro3 * 1.16; 
+Console.Clear(); 
+Console.WriteLine("Sus datos son los siguientes: "); 
+Console.WriteLine("Producto1 + iva: "+ a); 
+Console.WriteLine("Producto2 + iva: " + b); 
+Console.WriteLine("Producto3 + iva: " + c); 
+suma = a+b+c; 
+Console.WriteLine("La suma de todo es: "+suma); 
+Console.ReadKey(true); 
+} 
+} 
+}
